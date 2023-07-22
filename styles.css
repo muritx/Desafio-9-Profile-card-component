@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+  --primary-text-color: hsl(229, 23%, 23%);
+  --secondary-text-color: hsl(0, 0%, 59%);
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/bg-pattern-top.svg"), url("images/bg-pattern-bottom.svg");
+  background-position: -40% 200%, 150% -90%;
+  background-repeat: no-repeat;
+  background-color: hsl(185, 75%, 39%);
+  font-family: 'Kumbh Sans', sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 375px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+  text-align: center;
+  font-size: 18px;
+}
+
+.background-container {
+  background-image: url("images/bg-pattern-card.svg");
+  height: 40%;
+  width: 100%;
+}
+
+.profile {
+  height: 36%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid hsl(0, 0%, 87%);
+}
+
+.top img {
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  border: 5px solid hsl(0, 0%, 100%);
+  top: 50%;
+  transform: translateY(-50%);
+  margin-bottom: -40%;
+}
+
+.bottom * {
+  margin-top: 7.5px;
+}
+
+.name,
+.numbers {
+  font-weight: 700;
+  color: var(--primary-text-color);
+}
+
+.age,
+.city,
+.number-text {
+  color: var(--secondary-text-color);
+}
+
+.age {
+  margin-left: 10px;
+}
+
+.city {
+  font-size: 14px;
+}
+
+.number-text {
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.info {
+  height: 24%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
+
+    body {
+        background-position: 120% 200%, -20% -100%;
+    }
+
+    .container {
+        width: 85%;
+    }
+
+}
